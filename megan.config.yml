@@ -4,6 +4,7 @@ downloads: ~/.ansible-downloads/
 configure_dotfiles: true
 configure_terminal: true
 configure_osx: true
+configure_k9s: true
 
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: false
@@ -89,6 +90,14 @@ homebrew_cask_apps:
 #  - slack
 #  - sublime-text
 #  - transmit
+
+
+# k9s
+k9s_skins_files:
+  - hcc-dev-usc-shared-aks-admin_skin.yml
+  - hcc-qa-usc-shared-aks-admin_skin.yml
+  - hcc-uat-usc-shared-aks-admin_skin.yml
+  - hcc-prod-usc-shared-aks-admin_skin.yml
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []

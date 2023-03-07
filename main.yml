@@ -46,6 +46,10 @@
       when: configure_sublime
       tags: ['sublime-text']
 
+    - import_tasks: tasks/k9s.yml
+      when: configure_k9s
+      tags: ['k9s']
+
     - name: Run post-provision task files in a block.
       tags: ['post']
       block:
