@@ -1,0 +1,31 @@
+# Preserve your terminal session background color
+k9s:
+  body:
+    bgColor: default
+    logoColor: orange
+  prompt:
+    bgColor: default
+  dialog:
+    bgColor: default
+  frame:
+    crumbs:
+      bgColor: default
+    title:
+      bgColor: default
+    border:
+      focusColor: orange
+    title:
+      fgColor: orange
+  views:
+    charts:
+      bgColor: default
+    table:
+      bgColor: default
+      header:
+        bgColor: default
+    xray:
+      bgColor: default
+    logs:
+      bgColor: default
+      indicator:
+        bgColor: default

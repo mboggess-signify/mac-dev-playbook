@@ -1,0 +1,7 @@
+---
+- name: Ensure custom Terminal profile is added.
+  copy:
+    src: "files/k9s/skins/{{ item }}}"
+    dest: "/Users/mboggess/Library/Application Support/k9s/{{ item }}"
+  become: false
+  with_items: "{{ k9s_skins_files }}"
