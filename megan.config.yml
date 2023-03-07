@@ -34,6 +34,10 @@ dotfiles_files:
   - .inputrc
   - .osx
   - .vimrc
+dotfiles_folders:
+  - .kube
+dotfiles_folders_docs:
+  - .kube/add-configs-here.txt
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
