@@ -5,9 +5,11 @@ configure_dotfiles: true
 configure_osx: true
 configure_k9s: true
 
-dotfiles_repo: git@github.com:mboggess-signify/dotfiles.git
+dotfiles_repo: git@github.com:mboggess-signify/signify-health-sre-dotfiles.git
+dotfiles_repo_version: main
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/git/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/git/GitHub/signify-health-sre-dotfiles
+dotfiles_home: ~/
 dotfiles_files:
   - .aliases
   - .zshrc
@@ -58,18 +60,7 @@ homebrew_taps:
   - homebrew/cask
 
 homebrew_cask_appdir: /Applications
-homebrew_cask_apps:
-#  - docker - has to be installed from Self Service
-#  - google-chrome - installed when you receive computer at hire
-#  - slack - installed when you receive computer at hire
-#  - chromedriver
-#  - transmit
-#  - sequel-ace
-#  - dropbox
-#  - firefox
-#  - handbrake
-#  - licecap
-
+homebrew_cask_apps: []
 
 # k9s
 k9s_skins_files:

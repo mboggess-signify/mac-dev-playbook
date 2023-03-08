@@ -32,9 +32,29 @@ As Jeff says in the intro to his playbook, some things in macOS are slightly dif
      1. Upgrade Pip: `sudo pip3 install --upgrade pip`
      1. Install Ansible: `pip3 install ansible`
 
+  1. Clone or download the [signify-health-sre-dotfiles](https://github.com/mboggess-signify/signify-health-sre-dotfiles) to your local drive.
   1. Clone or download this repository to your local drive.
+  1. Override dotfiles variables configured in `default.config.yml` by creating a `config.yml` file and setting `dotfiles_repo_local_destination` to the location you cloned the signify-health-sre-dotfiles repo.
+  1. When you create the `config.yml`, make sure to update the name of your config file in `main.yml`.
   1. Run `ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
   1. Run `ansible-playbook main.yml --ask-become-pass` inside this directory. Enter your macOS account password when prompted for the 'BECOME' password.
+
+     > Note: you may come across the following error
+
+```
+TASK [geerlingguy.mac.homebrew : Ensure Homebrew parent directory has correct permissions (MacOS >= 10.13).] ***************************************************************************************************************
+fatal: [127.0.0.1]: FAILED! => changed=false
+  module_stderr: |2-
+
+    mboggess is not in the sudoers file.  This incident will be reported.
+  module_stdout: ''
+  msg: |-
+    MODULE FAILURE
+    See stdout/stderr for the exact error
+  rc: 1
+```
+
+    If you do, toggle the Privileges application on so you have sudo access.
 
 > Note: If some Homebrew commands fail, you might need to agree to Xcode's license or fix some other Brew issue. Run `brew doctor` to see if this is the case.
 

@@ -3,7 +3,7 @@
   hosts: all
 
   vars_files:
-    - megan.config.yml
+    - default.config.yml
 
   pre_tasks:
     - name: Include playbook configuration.
@@ -18,16 +18,13 @@
       tags: ['homebrew']
 
   tasks:
-    - import_tasks: tasks/osx.yml
-      when: configure_osx
-      tags: ['osx']
-
     - import_tasks: tasks/dotfiles.yml
       when: configure_dotfiles
       tags: ['dotfiles']
 
-    - import_tasks: tasks/brew.yml
-      tags: ['homebrew']
+    - import_tasks: tasks/osx.yml
+      when: configure_osx
+      tags: ['osx']
 
     - import_tasks: tasks/k9s.yml
       when: configure_k9s
