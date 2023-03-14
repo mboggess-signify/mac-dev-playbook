@@ -31,7 +31,7 @@
       tags: ['k9s']
 
     - import_tasks: tasks/extra-packages.yml
-      tags: ['extra-packages']
+      tags: ['extras']
 
     - import_tasks: tasks/sudoers.yml
       when: configure_sudoers
