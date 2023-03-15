@@ -38,6 +38,7 @@ homebrew_installed_packages:
   - gpg
   - httpie
   - iperf
+  - jq
   - kubectl
   - libevent
   - mcrypt
