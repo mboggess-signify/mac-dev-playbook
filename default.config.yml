@@ -54,10 +54,15 @@ homebrew_installed_packages:
   - derailed/k9s/k9s
   - azure-cli
   - gnu-sed
+  - sgfy/sgfy-homebrew/ado
+  - sgfy/sgfy-homebrew/azpdocs
+  - sgfy/sgfy-homebrew/pbt
+  - sgfy/sgfy-homebrew/stagehand
 
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - { name: sgfy/sgfy-homebrew, url: 'https://dev.azure.com/signifyhealth/HCC/_git/sgfy-homebrew'}
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps: []
