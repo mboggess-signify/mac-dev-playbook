@@ -86,10 +86,12 @@ osx_script: "~/.osx --no-restart"
 # Note: You are responsible for making sure the required package managers are
 # installed, eg. through homebrew.
 pip_packages:
+ - name: jsoncsv
+   state: present
  - name: mkdocs
-   state: latest # present/absent/latest, default: present
+   state: present # present/absent/latest, default: present
  - name: mkdocs-techdocs-core
-   state: latest 
+   state: present
 composer_packages: []
 # - name: drush
 #   state: present # present/absent, default: present
