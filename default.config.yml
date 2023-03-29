@@ -92,6 +92,10 @@ pip_packages:
    state: present # present/absent/latest, default: present
  - name: mkdocs-techdocs-core
    state: present
+ - name: virtualenv
+   state: present
+ - name: virtualenvwrapper
+   state: present
 composer_packages: []
 # - name: drush
 #   state: present # present/absent, default: present
