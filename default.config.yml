@@ -39,6 +39,7 @@ homebrew_installed_packages:
   - httpie
   - iperf
   - jq
+  - keepassxc
   - kubectl
   - libevent
   - mcrypt
