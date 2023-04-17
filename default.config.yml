@@ -97,6 +97,11 @@ pip_packages:
    state: present
  - name: virtualenvwrapper
    state: present
+
+npm_packages:
+ - name: yarn
+   state: present # present/absent/latest, default: present
+
 composer_packages: []
 # - name: drush
 #   state: present # present/absent, default: present
@@ -105,10 +110,7 @@ gem_packages: []
 # - name: bundler
 #   state: present # present/absent/latest, default: present
 #   version: "~> 1.15.1" # default: N/A
-npm_packages: []
-# - name: webpack
-#   state: present # present/absent/latest, default: present
-#   version: "^2.6" # default: N/A
+
 configure_sudoers: false
 sudoers_custom_config: ''
 # Example:
@@ -117,4 +119,5 @@ sudoers_custom_config: ''
 #   %admin ALL=(ALL) NOPASSWD: ALL
 
   # Glob pattern to ansible task files to run after all other tasks are finished.
+
 post_provision_tasks: []
