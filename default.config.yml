@@ -34,6 +34,7 @@ homebrew_installed_packages:
   - git
   - github/gh/gh
   - gnu-sed
+  - gh
   - go
   - gpg
   - httpie

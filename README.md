@@ -102,6 +102,31 @@ Applications (installed with Homebrew Cask):
 
 Packages (installed with Homebrew): see default.config.yml for up-to-date list.
 
+  - autoconf
+  - bash-completion
+  - doxygen
+  - gettext
+  - gifsicle
+  - git
+  - gh
+  - go
+  - gpg
+  - httpie
+  - iperf
+  - libevent
+  - sqlite
+  - nmap
+  - node
+  - nvm
+  - php
+  - ssh-copy-id
+  - cowsay
+  - readline
+  - openssl
+  - pv
+  - wget
+  - wrk
+  - zsh-history-substring-search
 
 Dotfiles are  installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of macOS for better performance and ease of use. *Make sure to read through the .osx script to ensure you understand what changes will be made by it.* You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
 
